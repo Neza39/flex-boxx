@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flex-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <title>Flex-box</title>
+</head>
+<body>
+
+<nav>
+    <a href="flex-html.html" class="nav-home">HOME</a>
+    <a href="test.html" class="nav-test">TEST</a>
+</nav>
+
+<section class="hero">
+    <img src="assets-flex/hero-title.webp" alt="title-photo">
+</section>
+
+<section class="lesson">
+
+    <div class="lesson-wrapper">
+
+        <div class="text-box">
+
+          <p>In CSS, a parent element controls its children.</p>
+            <p>Add <strong>Flex-box</strong>, and the parent gets superpowers.</p>
+            <p>Imagine the plate is the parent, the sushi pieces are the children, and Flex is what tells them exactly how to move.</p>
+            <pre><code>.plate {
+  display: flex;
+}</code></pre>
+
+        </div>
+
+        <div class="cat-box">
+
+            <div class="speech-bubble">
+                <p>Hi! I'm Flex! These sushi are a mess!<br> Set me to display: flex and I'll sort them out!</p>
+            </div>
+
+            <img src="assets-flex/flex-cat.webp" alt="cat-illustration">
+
+            <div class="sushi-plate">
+                <img src="assets-flex/sushi1.webp" class="sushi1" alt="sushi-illustration">
+                <img src="assets-flex/sushi2.webp" class="sushi2" alt="sushi-illustration">
+                <img src="assets-flex/sushi3.webp" class="sushi3" alt="sushi-illustration">
+
+                <button class="btn-flex">SET DISPLAY: FLEX</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<nav class="bottom-nav">
+    <button class="arrow-btn" id="prev">◀</button>
+    <button class="topic-btn">row</button>
+    <button class="topic-btn">justify</button>
+    <button class="topic-btn">align</button>
+    <button class="topic-btn">gap</button>
+    <button class="topic-btn">column</button>
+    <button class="arrow-btn" id="next">▶</button>
+</nav>
+
+
+<script src="flex-js.js" defer></script>
+</body>
+</html>
