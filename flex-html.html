@@ -42,9 +42,9 @@
                 <p>Hi! I'm Flex! These sushi are a mess!<br> Set me to display: flex and I'll sort them out!</p>
             </div>
 
-            <img src="assets-flex/flex-cat.webp" alt="cat-illustration">
+            <img src="assets-flex/flex-cat.webp" class="cat-img" alt="cat-illustration">
 
-            <div class="sushi-plate">
+            <div class="sushi-plate scene-0">
                 <img src="assets-flex/sushi1.webp" class="sushi1" alt="sushi-illustration">
                 <img src="assets-flex/sushi2.webp" class="sushi2" alt="sushi-illustration">
                 <img src="assets-flex/sushi3.webp" class="sushi3" alt="sushi-illustration">
@@ -59,13 +59,13 @@
 
 </section>
 
-<nav class="bottom-nav">
+<nav class="bottom-nav hidden-nav">
     <button class="arrow-btn" id="prev">◀</button>
-    <button class="topic-btn">row</button>
-    <button class="topic-btn">justify</button>
-    <button class="topic-btn">align</button>
-    <button class="topic-btn">gap</button>
-    <button class="topic-btn">column</button>
+    <button class="topic-btn" onclick="loadScene(1)">row</button>
+    <button class="topic-btn" onclick="loadScene(2)">justify</button>
+    <button class="topic-btn" onclick="loadScene(3)">align</button>
+    <button class="topic-btn" onclick="loadScene(4)">gap</button>
+    <button class="topic-btn" onclick="loadScene(5)">column</button>
     <button class="arrow-btn" id="next">▶</button>
 </nav>
 

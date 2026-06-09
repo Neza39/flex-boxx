@@ -7,20 +7,21 @@ body{
 }
 
 button:hover, a:hover {
-    background-color: rgba(45, 31, 61, 0.8);
+    background-color: rgba(86, 52, 69, 0.8);
+    color: white;
 }
 .nav-home:hover {
     background-image: none;
-    background-color: rgba(45, 31, 61, 0.8);
+    background-color: rgba(86, 52, 69, 0.8);
 }
 
 button:active, a:active {
-    background-color: rgba(45, 31, 61, 1);
+    background-color: rgba(86, 52, 69, 1);
 }
 
 .nav-home:active {
     background-image: none;
-    background-color: rgba(45, 31, 61, 1);
+    background-color: rgba(86, 52, 69, 1);
 }
 
 .topic-btn:hover{
@@ -74,19 +75,21 @@ nav{
 
 .lesson{
     padding: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .lesson-wrapper{
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 40px;
+        height: 700px;
 }
 
 .cat-box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .cat-box img {
@@ -111,19 +114,19 @@ nav{
     width: 180px;
 }
 
-.sushi1{
+.scene-0 .sushi1{
     position: absolute;
     top: 20px;
     left: 50px;
 }
 
-.sushi2{
+.scene-0 .sushi2{
     position: absolute;
     top: 300px;
     left: 350px;
 }
 
-.sushi3{
+.scene-0 .sushi3{
     position: absolute;
     top: 150px;
     right: 100px;
@@ -163,9 +166,11 @@ nav{
 
 .text-box pre {
     margin-top: auto;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     background: transparent;
-    padding: 0px;
+    padding: 0;
+    margin-left: -30px;
+    margin-right: -30px;
 }
 
 .text-box code {
@@ -196,6 +201,10 @@ nav{
     gap: 40px;
 }
 
+.hidden-nav{
+    display: none;
+}
+
 .arrow-btn{
     background-color: #3EA652;
     color: white;
@@ -214,3 +223,73 @@ nav{
     height: 35px;
     width: 150px;
 }
+
+.scene-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.scene-justify {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.scene-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene-gap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.scene-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat-row {
+margin-bottom: -8px;
+}
+
+.cat-justify{
+    margin-bottom: 3px;
+}
+
+.cat-align{
+    margin-bottom: -8px;
+}
+
+.cat-gap{
+    margin-bottom: -10px;
+}
+
+.cat-column{
+    margin-bottom: -3px;
+}
+
+.code-btn{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid #926947;
+    border-radius: 25px;
+    padding:15px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #036C4D;
+    font-weight: bolder;
+}
+.topic-btn.active {
+    background-image: url("assets-flex/btn.png");
+    background-size: cover;
+    color: white;
+}
+
+
