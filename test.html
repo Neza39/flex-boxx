@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flex-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <title>test page</title>
+
+    <style>
+        body {
+            background-size: cover;
+            background-position: center -30px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="flex-html.html" class="nav-home">HOME</a>
+    <a href="test.html" class="nav-test">TAKE A TEST</a>
+</nav>
+
+<div class="scroll-wrapper">
+
+    <h1 class="test-title">LET'S SEE WHAT YOU'VE LEARNED!</h1>
+
+    <div class="scroll-content">
+
+        <div class="question">
+            <p>1. What code activates flexbox on the parent?</p>
+            <div class="answers">
+                <button class="code-btn" onclick="checkAnswer(this, false)">display: block</button>
+                <button class="code-btn" onclick="checkAnswer(this, true)">display: flex</button>
+                <button class="code-btn" onclick="checkAnswer(this, false)">display: flexbox</button>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Which code made this happen?</p>
+            <div class="answers">
+                <button class="code-btn" onclick="checkAnswer(this, true)">flex-direction: column</button>
+                <button class="code-btn" onclick="checkAnswer(this, false)">flex-direction: row</button>
+                <button class="code-btn" onclick="checkAnswer(this, false)">flex-direction: vertical</button>
+            </div>
+            <img src="assets-flex/q1.webp" alt="sushi plate">
+        </div>
+
+        <div class="question">
+            <p>3. Which property centered the sushi?</p>
+            <div class="answers">
+                <button class="code-btn" onclick="checkAnswer(this, false)">justify-content: center</button>
+                <button class="code-btn" onclick="checkAnswer(this, true)">align-items: center</button>
+                <button class="code-btn" onclick="checkAnswer(this, false)">justify-items: center</button>
+            </div>
+            <img src="assets-flex/q2.webp" alt="sushi plate">
+        </div>
+
+        <div class="question">
+            <p>4. You want to move the sushi to the bottom of the plate vertically. Which code do you use?</p>
+            <div class="answers">
+                <button class="code-btn" onclick="checkAnswer(this, false)">justify-content: flex-end</button>
+                <button class="code-btn" onclick="checkAnswer(this, false)">align-items: bottom</button>
+                <button class="code-btn" onclick="checkAnswer(this, true)">align-items: flex-end</button>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. What controls the space between children?</p>
+            <div class="answers">
+                <button class="code-btn" onclick="checkAnswer(this, false)">margin: flex</button>
+                <button class="code-btn" onclick="checkAnswer(this, true)">gap: 40px</button>
+                <button class="code-btn" onclick="checkAnswer(this, false)">padding: 40px</button>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. Which plate is correct?</p>
+            <pre><code>.plate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}</code></pre>
+            <div class="answers">
+                <button class="code-btn" onclick="checkAnswer(this, false)"><img src="assets-flex/qs1.webp" alt="plate option"></button>
+                <button class="code-btn" onclick="checkAnswer(this, false)"><img src="assets-flex/q1.webp" alt="plate option"></button>
+                <button class="code-btn" onclick="checkAnswer(this, true)"><img src="assets-flex/qs2.webp" alt="plate option"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="congrats">
+
+        <div class="speech-bubble">
+            <p>CONGRATULATIONS! NOW YOU KNOW ALL MY SECRETS!!</p>
+        </div>
+
+        <img src="assets-flex/gap-cat.webp" class="end-cat" alt="happy cat">
+    </div>
+
+
+
+</div>
+    <script src="test-js.js" defer></script>
+</body>
+</html>

@@ -64,7 +64,7 @@ const scenes = [
         catClass: 'cat-row',
         cat: 'assets-flex/row-cat.webp',
         speech: 'Get in line children! You are now under my command!',
-        text: `<p>When you set<strong>display:flex</strong>, the children automatically line up in a row.</p>
+        text: `<p>When you set <strong>display:flex</strong>, the children automatically line up in a row.</p>
         <p>That's because <strong>flex-direction: row</strong> is the default. You don't even need to write it!</p>
         <pre><code>.plate {
         display: flex;
@@ -76,7 +76,7 @@ const scenes = [
         plate: 'scene-justify',
         catClass: 'cat-justify',
         cat: 'assets-flex/justify-cat.webp',
-        speech: 'Get in line children! You are now under my command!',
+        speech: 'Now go to the middle!',
         text: `<p><strong>Justify-content</strong>, controls where the children sit horizontally.</p>
         <p>Click to try it!</p>
         <pre><code>.plate {
@@ -150,7 +150,17 @@ function loadScene(index) {
     catImg.src = scene.cat;
     catImg.className = 'cat-img ' + scene.catClass;
     document.querySelectorAll('.topic-btn').forEach(btn => btn.classList.remove('active'));
+    currentScene = index;
     if (index > 0) {
         document.querySelectorAll('.topic-btn')[index - 1].classList.add('active');
+    }
+    if (index === 5) {
+        nextBtn.className = 'nav-test';
+        nextBtn.innerHTML = 'TEST';
+        nextBtn.onclick = () => window.location.href = 'test.html';
+    } else {
+        nextBtn.className = 'arrow-btn';
+        nextBtn.innerHTML = '►';
+        nextBtn.onclick = null;
     }
 }
