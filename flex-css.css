@@ -344,3 +344,155 @@ margin-bottom: -8px;
     padding: 40px;
 }
 
+@media (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+        background-position: center;
+    }
+
+    .cat-row{
+        margin-bottom: -1px;
+    }
+
+    .cat-justify{
+        margin-bottom: 5px;
+    }
+
+    .cat-align{
+        margin-bottom: 1px;
+    }
+
+    .cat-gap{
+        margin-bottom: -2px;
+    }
+
+    .cat-column{
+        margin-bottom: 1px;
+    }
+
+    .end-cat{
+        margin-bottom: -100px;
+    }
+
+    nav {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .hero {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .lesson {
+        padding: 10px;
+    }
+
+    .lesson-wrapper {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 10px;
+    }
+
+    .text-box {
+        padding: 15px;
+    }
+
+    .text-box p {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .text-box pre {
+        margin-bottom: 10px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .text-box code {
+        font-size: 13px;
+    }
+
+    .speech-bubble {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .cat-box {
+        width: 100%;
+    }
+
+    .cat-box img {
+        width: 180px;
+    }
+
+    .sushi-plate {
+        height: 200px;
+        margin-top: -30px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .sushi-plate img {
+        width: 80px;
+    }
+
+    .scene-0 .sushi1 { top: 10px; left: 20px; }
+    .scene-0 .sushi2 { top: 150px; left: 120px; }
+    .scene-0 .sushi3 { top: 60px; right: 20px; }
+
+    .btn-flex {
+        padding: 8px 15px;
+        font-size: 13px;
+        width: 60%;
+        z-index: 3;
+    }
+
+    .bottom-nav {
+        gap: 10px;
+    }
+
+    .topic-btn {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .topic-btn {
+        width: 60px;
+        font-size: 9px;
+        height: 28px;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    .bottom-nav {
+        gap: 5px;
+    }
+
+    .code-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .scene-gap{
+        gap: 40px;
+    }
+
+    .scroll-wrapper {
+        background-image: none;
+        backdrop-filter: blur(10px);
+        border: 2px solid #926947;
+        border-radius: 25px;
+        padding: 40px 20px;
+        margin: 10px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .test-title {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
